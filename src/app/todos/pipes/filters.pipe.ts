@@ -9,7 +9,6 @@ import { filtersValidator } from '../store/filter/filter.actions';
 export class FiltersPipe implements PipeTransform {
 
   transform( itemsTodo: Todo[], filter: filtersValidator): Todo[] {
-    console.log(itemsTodo);
     // filter: 'all' | 'completed' | 'pending'
     switch (filter) {
       case 'all':
