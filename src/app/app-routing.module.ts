@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TodoPageComponent } from './todos/todo-page/todo-page.component';
+import { AppComponent } from './app/app.component';
 
 const routes: Routes = [
-  { path: '', component: TodoPageComponent},
+  { path: '', component: AppComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
